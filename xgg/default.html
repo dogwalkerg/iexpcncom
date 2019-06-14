@@ -1,0 +1,882 @@
+﻿	<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>小哥哥免流™|一键OPENVPN搭建|用心VPN|用心制作</title>
+<meta name="description" content="小哥哥一键搭建OpenVPN云免,真正让你免流量上网的神器!IOS免流最新版,小哥哥IOS免流官网，电脑、手机免流量,巧用SHELL代码,以0编程基础开发免流插件,小哥哥控流系统！"/>
+<meta name="keywords" content="小哥哥免流，骚逼汪云免，康师傅免流，变脸狗控流，变脸狗免流，变脸狗系统，康师傅控流，dalo免流，SS控流，变脸狗破解版，openvpn控流，openvpn云免"/>
+<!-- CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="css/simple-line-icons.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet">
+<!-- Custom styles CSS -->
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link rel="shortcut icon" href="favicon.ico">
+<script src="js/clipboard.min.js"></script>
+<body oncontextmenu="self.event.returnValue=false" onselectstart="return false">
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+	</div>
+</div>
+<!-- Home start -->
+<section id="home" class="pfblock-image screen-height" style="height: 820px; background-position: 50% 0px;">
+<div class="home-overlay">
+</div>
+<div class="intro">
+	<div class="start">
+		Hello, 欢迎您访问小哥哥官网
+	</div>
+	<h1>本站永久提供稳定VPN与免费破解脚本</h1>
+	<div class="start">
+		一站式管理，多模式操作
+	</div>
+</div>
+<a href="#services">
+<div class="scroll-down">
+	<span>
+	<i class="fa fa-angle-down fa-2x"></i>
+	</span>
+</div>
+</a>
+</section>
+<!-- Home end -->
+<!-- Navigation start -->
+<header class="header">
+<nav class="navbar navbar-custom" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html">yxvpn.net</a>
+	</div>
+	<div class="collapse navbar-collapse" id="custom-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#home">首页</a></li>
+			<li><a href="#services">要求</a></li>
+			<li><a href="#yanshi">后台演示</a></li>
+			<li><a href="#portfolio">教程</a></li>
+			<li><a href="#tup">流控展示</a></li>
+			<li><a href="#app">APP展示</a></li>
+			<li><a href="http://km.yxvpn.net">授权购买</a></li>
+			<li><a href="#testimonials">日志</a></li>
+			<li><a href="#contact">反馈</a></li>
+			<li><a href="http://wpa.qq.com/msgrd?v=3&uin=843491408&site=qq&menu=yes">联系作者</a></li>
+			<li><a href="#"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="25" height="20" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+			<param name="movie" value="singlemp3player.swf?file=http://code.taobao.org/svn/haosky/mp3/music.mp3&autoStart=true&backColor=ffffff&frontColor=000000"/>
+			<param name="wmode" value="transparent"/>
+			<embed wmode="transparent" width="25" height="20" src="flash/singlemp3player.swf" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+			</object></a></li>
+		</ul>
+	</div>
+</div>
+<!-- .container -->
+</nav>
+</header>
+<!-- Navigation end -->
+<!-- Services start -->
+<section id="services" class="pfblock pfblock-gray">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="pfblock-header wow fadeInUp">
+				<h2 class="pfblock-title">系统要求</h2>
+				<div class="pfblock-line">
+				</div>
+				<div class="pfblock-subtitle">
+							服务系统：CentOS6.X/7.X 仅支持64位系统
+					<br>
+                                                                            推荐宽带：10M 以上 
+					<br>
+                                                                            主机支持：适用于阿里云、腾讯云等使用
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="iconbox wow slideInLeft">
+				<div class="iconbox-icon">
+					<span class="icon-magic-wand"></span>
+				</div>
+				<div class="iconbox-text">
+					<h3 class="iconbox-title">自带品牌引导页</h3>
+					<div class="iconbox-desc">
+								解决无自有品牌烦恼，后台自定义更新
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="iconbox wow slideInLeft">
+				<div class="iconbox-icon">
+					<span class="icon-puzzle"></span>
+				</div>
+				<div class="iconbox-text">
+					<h3 class="iconbox-title">响应式扁平化设计</h3>
+					<div class="iconbox-desc">
+								管理中心风格全面统一，，给你带来最佳的用户体验
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="iconbox wow slideInRight">
+				<div class="iconbox-icon">
+					<span class="icon-badge"></span>
+				</div>
+				<div class="iconbox-text">
+					<h3 class="iconbox-title">支持推荐/签到功能</h3>
+					<div class="iconbox-desc">
+								让您品牌增强客户粘性，留住您的客户
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="iconbox wow slideInRight">
+				<div class="iconbox-icon">
+					<span class="icon-social-dropbox"></span>
+				</div>
+				<div class="iconbox-text">
+					<h3 class="iconbox-title">集成安卓APP</h3>
+					<div class="iconbox-desc">
+								自动生成带线路APP，兼容大部分安卓系统
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- .row -->
+</div>
+<!-- .container -->
+</section>
+<!-- Services end -->
+<!-- Portfolio start -->
+	<section id="yanshi" class="pfblock">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="pfblock-header">
+					<h2 class="pfblock-title">小哥哥流控管理后台演示</h2>
+					<div class="pfblock-line">
+					</div>
+					<div class="pfblock-subtitle">
+							演示地址 http://ys.yxvpn.net/admin<br>
+							管理员账号 admin<br>
+							管理员密码 xggpass<br>
+							请勿贩卖 1M小水管演示 只为二期界面功能查看<br>
+					</div>
+				</div>
+			</div>
+<section id="portfolio" class="pfblock">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="pfblock-header wow fadeInUp">
+				<h2 class="pfblock-title">安装教程</h2>
+                    <br>
+                 <a target="_blank" href="http://rj.baidu.com/soft/detail/15201.html" title="点击下载xshell5" class="btn btn-info">电脑下载Xshell5</a>
+                 <a target="_blank" href="http://www.wandoujia.com/apps/com.sonelli.juicessh" title="点我下载橘子ssh" class="btn btn-warning">安卓下载橘子SSH</a>
+                 <a target="_blank" href="https://itunes.apple.com/cn/app/id581455211?mt=8" title="点我下载iTerminal" class="btn btn-success">苹果下载iTerminal</a>
+                <br><br>
+				<br>
+				<div class="col-sm-6">
+				<div class="pfblock-subtitle">
+					<div class="alert alert-danger">
+					<div id="foo1">
+					
+						<b>wget http://yxvpn.net/xgg;chmod +x xgg;./xgg</b></div>（搭建脚本）<br><button class="btn btn-success" data-clipboard-target="#foo1" aria-label="复制成功，开始搭建吧！">点击复制</button></div>
+					
+				</div><br>
+		                 <a target="_blank" href="http://km.yxvpn.net" class="btn btn-warning">正版授权购买（10元永久绑定IP）</a>
+		       <br><br>
+				</div>
+ <div class="col-sm-6">
+				
+				<div class="pfblock-subtitle">
+					<div class="alert alert-warning">
+					<div id="foo12">
+					
+					
+						<font color=""><b>wget http://www.yxvpn.net/xgg;chmod +x xgg;./xgg</b>
+					</div>（备用搭建脚本）<br><button class="btn btn-success" data-clipboard-target="#foo12" aria-label="复制成功，开始搭建吧！">点击复制</button></div>
+				</div><br>
+ <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=463q5mW" class="btn btn-lg">小哥哥免流交流群™(563151808)</a>
+<br><br>
+				</div>
+				
+				
+					<div class="col-sm-6">
+				<div class="pfblock-subtitle">
+					<div class="alert alert-info">
+					<div id="foo111">
+					
+						<b>暂停供应</b></div>（最新破解集合脚本）<br><button class="btn btn-success" data-clipboard-target="#foo111" aria-label="复制成功，开始搭建吧！">点击复制</button></div>
+				</div>
+				</div>
+			<div class="col-sm-6">
+				<div class="pfblock-subtitle">
+					<div class="alert alert-success">
+					重启vpn命令：<b>vpn</b><br>
+					重启LAMP命令：<b>lamp</b><br>
+					重启LNMP命令：<b>lnmp</b></div>
+				</div>
+				</div>
+				</div>
+		</div>
+	</div>
+	<!-- .row -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="grid wow zoomIn">
+				<a href="javascript:void(0)" data-fancybox-type="iframe" class="various2">
+				<figure class="effect-bubba">
+				<img src="picture/item-1.jpg" alt="img01">
+				<figcaption>
+				<h2>小哥哥流控搭建 <span>一键搭建</span></h2>
+				<p>
+					简单易学 
+				</p>
+				</figcaption>
+				</figure>
+				</a>
+				<a target="_blank" href="https://v.qq.com/x/page/l0394r9rnqt.html?ptag=qqbrowser" class="btn btn-lg">小哥哥流控搭建教学视频在线观看</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="grid wow zoomIn">
+				<a href="javascript:void(0)">
+				<figure class="effect-bubba">
+				<img src="picture/item-2.jpg" alt="img01">
+				<figcaption>
+				<h2>小哥哥流控负载 <span>一键负载</span></h2>
+				<p>
+					简单易学
+				</p>
+				</figcaption>
+				</figure>
+				</a>
+				<a target="_blank" href="https://v.qq.com/x/page/x039472soa5.html?ptag=qqbrowser" allowFullScreen="true" quality="high" class="btn btn-lg">小哥哥流控负载教学视频在线观看</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-4">
+			<div class="grid wow zoomIn">
+				<a href="javascript:void(0)">
+				<figure class="effect-bubba">
+				<img src="picture/item-4.jpg" alt="img01">
+				<figcaption>
+				<h2>小哥哥流控数据备份导出导入 <span>导出导入教程</span></h2>
+				<p>
+					简单易学
+				</p>
+				</figcaption>
+				</figure>
+				</a>
+				<a target="_blank" href="https://v.qq.com/x/page/n0394giknem.html?ptag=qqbrowser" allowFullScreen="true" quality="high" allowFullScreen="true" quality="high" class="btn btn-lg">小哥哥流控备份数据教学视频在线观看</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- .contaier -->
+</section>
+<!-- Portfolio end -->
+<!-- Skills start -->
+<!-- CallToAction start -->
+<section id="tup" class="pfblock pfblock-gray">
+<div class="container">
+<div class="box ">
+<div class="container">
+<div class="show">
+<center>
+<h1>流控展示 <br> <small>流控系统界面图片展示</small></h1>
+</center>
+<br>
+<br>
+<center>
+</center>
+<div class="row">
+<div class="col-xs-6 col-sm-6">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/1.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/2.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/3.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/4.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/5.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/6.png" class="img-responsive">
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div></section>
+
+
+<section id="app" class="pfblock">
+<div class="container">
+<div class="box ">
+<div class="container">
+<div class="show">
+<center>
+<h1>APP展示 <br> <small>APP界面图片展示</small></h1>
+</center>
+<br>
+<br>
+<center>
+</center>
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app1.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app2.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app3.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app4.png" class="img-responsive">
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app5.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app6.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app7.png" class="img-responsive">
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-3">
+<div class="panel panel-default">
+<div class="panel-body">
+<img src="picture/app8.png" class="img-responsive">
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section class="calltoaction">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<h2 class="wow slideInRight" data-wow-delay=".1s">WEB高级流控授权</h2>
+			<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+                        希望您支持我们的努力，谢谢！我们会用更好的用户体验设计与功能提供给大家！
+			</div>
+		</div>
+		<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+			<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=463q5mW" class="btn btn-lg">小哥哥免流交流群™(563151808)</a>
+			<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=466R8JU" class="btn btn-lg">小哥哥免流售后群™(493633032)</a>
+			
+			</div>
+			
+			<embed src="//music.163.com/style/swf/widget.swf?sid=33991619&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all"></embed>
+		</div>
+	</div>
+	<!-- .row -->
+
+	<!--End row -->
+</div>
+</section>
+<!-- Skills end -->
+<!-- Testimonials start -->
+<section id="testimonials" class="pfblock pfblock-gray">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="pfblock-header wow fadeInUp">
+				<h2 class="pfblock-title">更新历史</h2>
+				<div class="pfblock-line">
+				</div>
+
+				 <div class="pfblock-subtitle">
+				 <h3 class="pfblock-title">2017-10-22</h3><br>
+                      1、修复APP前台登录公告<br>
+                      2、前台首页添加软件下载按钮<br>
+                      3、新增一个线路分类<br>
+                      4、美化APP流量排行<br>
+                      5、新增APP内在线支付购买<br>
+					  6、新增UDP端口68 TCP端口18889<br>
+					  7、修复UDP连接没网络问题<br>
+					  8、新增在线更新命令(告别备份重装搭建)<br>
+					  9、更新线路20条(不更新可以选择安装脚本选项5)<br>
+					  更多强大的功能正在努力开发ing...<br>
+				
+				 <div class="pfblock-subtitle">
+				 <h3 class="pfblock-title">2017-10-22</h3><br>
+                      1、修复前台登录提示盗版的BUG<br>
+                      2、更新在线支付免签约<br>
+                      3、付款方式支持支付宝、花呗、QQ、微信<br>
+                      4、对接发卡君API、告别手动加卡<br>
+                      5、优化前台后台加载等等<br>
+					  6、修复提示盗版的问题<br>
+					  7、更新线路25条(不更新可以选择安装脚本选项5)<br>
+					  8、新增切换线路定位点节功能<br>
+					     切换定位有点节 定位无点节 <br>
+                         无定位无点节 切换命令:qh<br>
+					 郑重申明:流控不适用国外服务器 不参与任何技术支持<br>
+					 郑重承诺:永久售后正版用户 给予一切流控问题技术支持<br>
+					  
+			     <div class="pfblock-subtitle">
+				 <h3 class="pfblock-title">2017-10-03</h3><br>
+                      1、更新前台引导页<br>
+                      2、后台一键导出账号<br>
+                      3、修复线路无法定位<br>
+                      4、增加服务器节点管理<br>
+                      5、更新线路19条<br>
+					  
+			     <div class="pfblock-subtitle">
+				 <h3 class="pfblock-title">2017-08-13</h3><br>
+                      本次更新内容如下<br>
+                      写入优化代码<br>
+                      自带服务器优化加速<br>
+                      修复最新的渗透漏洞 防止注入渗透<br>
+                      具体自测、内容不予介绍<br>
+                      更新线路17条 都是经过测试的<br>
+                      运行脚本更新线路<br>
+                      更新选项⑤即可<br>
+                      更多功能正在研发中...<br>
+                      好的东西、自己慢慢品尝<br>
+                      更多功能尽请待续-By小哥哥<br>
+				
+				 <div class="pfblock-subtitle">
+				 <h3 class="pfblock-title">2017-07-09</h3><br>
+				      本次更新内容如下<br>
+                      更新线路30条<br>
+                      附带一条安徽必免的特殊线路<br>
+                      修改方法特殊 改错不免<br>
+                      需要修改的私聊群主<br>
+                      重新搭建或者直接选项5<br>
+                      新增流量卫士线路搜索、方便修改线路(需要重新搭建)<br>
+                      新增DNS解析功能:<br>
+                      智能解析优化是针对用户提供的去广告、访问谷歌服务、YouTube<br>
+                      支持腾讯视频、芒果TV等影视客户端去广告功能，同时<br>
+                      支持大部分网页去广告！<br>
+                      更多功能尽请待续...<br>
+				 
+				 <div class="pfblock-subtitle">
+				 <h3 class="pfblock-title">2017-06-23</h3><br>
+                      本次更新内容如下<br>
+                      新增在线人数踢人功能(需重装搭建更新)<br>
+                      新增流量卫士未激活状态登录自动激活(需重装搭建更新)<br>
+                      新增已开启端口查看命令: dk (需重装搭建更新)<br>
+					  新增代理卡密用户一键清空(需重装搭建更新)<br>
+                      修复提示盗版的BUG(需重装搭建更新)<br>
+                      修复监控在线人数BUG(需重装搭建更新)<br>
+                      在线人数显示更加详细(需重装搭建更新)<br>
+                      更新线路60条:全国各地、搭建自带<br>
+                      如果无需更新功能的(直接更新线路)<br>
+                      请执行脚本选项⑤<br>
+                      更多功能尽请待续...<br>
+				 
+				 <h3 class="pfblock-title">2017-05-27</h3><br>
+				      此次更新内容如下<br>
+					  脚本重写、搭建迅速、兼容性强<br>  
+					  防黑权限重写、修复一切已有漏洞<br>
+					  新增开启端口命令、秒开任意端口<br>
+					  自带优化网速 更好的利用服务器<br> 
+					  新增BBR安装选项、附带测速脚本<br> 
+					  更多更新的内容不与细说、自我体验<br>
+					  线路更新33条 几条独家必免<br>
+					  如需更新请备份数据重装搭建<br>
+					  无需更新选择脚本线路更新选项5<br>
+					                 更多尽请待续...<br>
+				 
+				 <h3 class="pfblock-title">2017-05-17</h3><br>
+				      此次更新一款APP<br>
+                      新增搭建计时<br>
+                      高仿搭建极速(400秒)<br>
+                      新增一款流量卫士APP<br>
+					  新增流量查询功能:方便客户查询流量<br>
+					  查询地址为:IP:端口/cx.php<br>
+                      更换美化版的定位功能、反馈功能(更加强大)<br>
+					  更新线路23条、都是经过测试的，无需担心不免<br>
+					  更多更新待续...<br>
+				 <h3 class="pfblock-title">2017-05-01</h3><br>
+				      此次更新修复了部分小BUG<br>
+					  修复高仿搭建不能重启 线路连接不上的问题 <br>
+				      部分不方便的东西都弄好了<br>
+				      把流量卫士后台迁移到管理后台（安全防黑）<br>
+				      并可再次对接流量卫士正版<br>
+					  线路添加更加方便 只需要添加代码部分即可<br>
+				      搭建好自带线路196条<br>
+				      更多功能自我体验挖掘<br>
+				      更新需要重装系统Centos7.2搭建<br>
+				      如果只需要更新线路的运行脚本选项7<br>
+				      自动更新线路并且自动导入5-1线路<br>
+				      重装搭建请备份好数据 <br>
+				      不会备份的请看教学视频<br>
+				 <h3 class="pfblock-title">2017-04-16</h3><br>
+				      小更新、内容如下:<br>
+					  后台推送了一部分线路、以后尽量每周推送一些线路<br>
+					  修复了几个小BUG 修复了流量卫士不能修改公告客服等<br>
+					  搭建后台默认admin改为随机 防止被插马<br>
+					  搭建默认端口1234改为随机 防止被扫<br>
+					  授权码一期二期通用、近期暂停一期搭建<br>
+					  如果需要负载的请尽快备份数据迁移、两期数据表通用<br>
+					  修改了备份功能选项⑤、简单的一键、备份、恢复-两期通用<br>
+					  小哥哥一直用心在写 感谢访问...<br>
+				 <h3 class="pfblock-title">2017-04-12</h3><br>
+				      此次更新修复了部分小BUG<br>
+				      部分不方便的东西都弄好了<br>
+				      增加美化APP生成选项⑥<br>
+				      生成流量卫士自动美化功能与个人中心<br>
+				      搭建好的可以直接美化<br>
+				      美化APP选项包括<br>
+				      3种流量卫士 4种云端APK<br>
+				      最近考虑加个极速搭建LAMP环境<br>
+					  一期暂停更新 建议搭建二期 尽快出个备份教程<br>
+				      授权码8.8永久绑定 一期二期通用<br>
+				      <h3 class="pfblock-title">2017-04-07</h3><br>
+				      小哥哥全新二期流控首发<br>
+				      单个授权码支持一、二期搭建<br>
+                      功能繁多 界面美化 绝对原创 精致美观<br>
+                      去除lamp搭建 优化简写lnmp<br>
+                      重新制作了后台 更加完美无瑕疵<br>
+                      增加了流量卫士线路反馈功能<br>
+                      更好的接收客户的意见和反馈<br>
+                      运行流畅 搭建迅速 支持任何机器<br>
+                      二期流控自带125条线路 大部分都能用<br>
+                      随机后台密码 随机数据库名 防止入侵<br>
+                      修复各种不是问题的问题 防黑永不放弃<br>
+                      凡是绑定了一期流控的IP依旧可以免费搭建<br>
+                      授权码定价8.8 暂定永久绑定IP无限搭建<br>
+
+					  <div class="pfblock-subtitle">
+				      <h3 class="pfblock-title">2017-03-24</h3>
+					  <br>
+                      简化lnmp环境搭建、支持任何服务器<br>
+                      调整苹果IOS线路定位功能<br>
+                      地址为IP:端口/ios<br>
+                      脚本选项⑦生成14条线路<br>
+                      必免 都是经过测试的<br>
+					  修复了若干BUG 更多尽请期待....<br>
+					  <h3 class="pfblock-title">2017-03-16</h3>
+					  <br>
+					  本次更新修复lnmp搭建问题<br>
+                      lnmp环境改为lamp环境<br>
+                      优化了搭建速度 帅的人只需要5分钟<br>
+                      修改是否安装定位功能的选项、不需要的可以不安装<br>
+                      脚本问题找我处理的 老客户踊跃点 进售后群<br>
+					  <h3 class="pfblock-title">2017-03-11</h3>
+					  <br>
+					  本次更新了一键线路更新、流量卫士线路定位功能<br>
+                      需要更新线路的用户无需重装直接运行脚本更新<br>
+                      需要定位功能的用户请备份后重新搭建<br>
+                      更新了全国各地的灾区线路-21条<br>
+                      都是测试过的、无需担心不免<br>
+					 
+					  <h3 class="pfblock-title">2017-03-06</h3>
+					  <br>
+					  为了方便去掉一键导入线路功能<br>
+                      搭建以后线路自动导入、无需再次添加<br>
+                      新增选项、一键美化流量卫士脚本<br>
+                      优化脚本搭建速度去掉了没用的东西<br>
+                      更新高防服务器搭建代码<br>
+					  优化udp53优化实时监控，自动备份<br>
+                      更多功能尽请期待... <br>
+					  <h3 class="pfblock-title">2017-03-03</h3>
+					  <br>
+					     抛弃了部分没用的线路 <br>
+                         修复了若干BUG<br>
+                         修改了一部分参数<br>
+                         优化脚本各种安装环节<br>
+                         增加24条自带线路 大多必免 <br>
+                         线路包括移动联通电信 地区有:湖南湖北广西广东安徽陕西北京黑龙江小哥哥7X系统安装脚本 <br>
+						 更多功能尽请期待... <br>
+
+				      <h3 class="pfblock-title">2017-02-21</h3>
+					  <br>
+					     修复了云端添加线路不直接显示在云端的BUG<br>
+                         修改了锁定目录的参数 更加方便 <br>
+                         修复了重启VPN失效 实时监控未监控<br>
+                         新增了流量卫士美化版一键脚本<br>
+                         自带两款美化版流量卫士<br>
+                         附带个人中心 美化个人中心<br>
+						 小哥哥正版流控经过测试 其余流控请备份后测试 <br>
+						 频繁更新 更多功能尽请期待... <br>
+				
+				
+				<div class="pfblock-subtitle">
+				      <h3 class="pfblock-title">2017-02-20</h3>
+					  <br>
+					     默认锁定文件目录无法修改 如需要解锁请使用命令<br>
+                         解锁目录权限命令：onlock 锁定目录命令：unlock<br>
+                         数据库默认关闭访问权限 如需要开启请使用命令<br>
+                         更加安全 防止挂黑页 防止SQL注入 安全大家<br>
+						 后台推送239条全网线路 更多尽请期待 <br>
+				
+				
+				
+				
+				
+				
+				     <div class="pfblock-subtitle">
+					 <h3 class="pfblock-title">2017-02-18</h3>
+					        
+                             2017-02-15 发布小哥哥免流
+							<br>
+                              优化后台打开速度<br>
+							  重写sql过滤规则，安全性能提高 <br>
+                              完美的商业系统，批量出卡系统<br>  
+                              完美的代理系统，完美的后端app <br>
+						      支持分站管理，自带流量卫士 <br>
+                              全新升级新免流系统<br>  
+                              更新已知的所以bug<br>   
+                              修复前台后台加载 <br>
+   
+						
+                                                            未完待续……   <br> 
+				                                                          <br>
+                                                                          <br>
+																		  									
+								   
+				</div>
+			</div>
+		</div>
+		<!-- .row -->
+		<div class="row">
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+				<div class="cbp-qtcontent">
+					<img src="picture/client-3.jpg" alt="client-1"/>
+					<blockquote>
+						<p>
+							特别鸣谢一路上支持我们提供源码和技术支持的网友，让我们完成了这个项目！
+						</p>
+						<footer>@致谢广大网友</footer>
+					</blockquote>
+				</div>
+				<div class="cbp-qtcontent">
+					<img src="picture/client-1.jpg" alt="client-1"/>
+					<blockquote>
+						<p>
+							他是一整天都容易犯困的浩哥，不过很喜欢研究！
+						</p>
+						<footer>92gx.net</footer>
+					</blockquote>
+				</div>
+				<div class="cbp-qtcontent">
+					<img src="picture/client-2.jpg" alt="client-2"/>
+					<blockquote>
+						<p>
+							一个“网站架构工程师”，喜好优化交互的网站设计师！
+						</p>
+						<footer>Kiki</footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+		<!-- .row -->
+	</div>
+	<!-- .row -->
+	</section>
+	<!-- Testimonial end -->
+	<!-- Contact start -->
+	<section id="contact" class="pfblock">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="pfblock-header">
+					<h2 class="pfblock-title">如果你有反馈？</h2>
+					<div class="pfblock-line">
+					</div>
+					<div class="pfblock-subtitle">
+							想要的功能，发现的Bug今天从这里提交！
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .row -->
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 text-center">
+	        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=463q5mW" class="btn btn-lg">小哥哥免流交流群™(563151808)</a>
+			<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=466R8JU" class="btn btn-lg">小哥哥免流售后群™(493633032)</a>
+				<br>
+				<div class="bdsharebuttonbox" style="width: 140px;margin: auto;">
+					<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				</div>
+				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+				<form id="contact-form" class="hide" role="form">
+					<div class="ajax-hidden">
+						<div class="form-group wow fadeInUp">
+							<label class="sr-only" for="c_name">怎么称呼你？</label>
+							<input type="text" id="c_name" class="form-control" name="c_name" placeholder="怎么称呼你？">
+						</div>
+						<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+							<label class="sr-only" for="c_email">回复你的邮箱？</label>
+							<input type="email" id="c_email" class="form-control" name="c_email" placeholder="回复你的邮箱？">
+						</div>
+						<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+							<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="说吧，你想说什么？"></textarea>
+						</div>
+						<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">写好了！</button>
+					</div>
+					<div class="ajax-response">
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- .row -->
+	</div>
+	<!-- .container -->
+	</section>
+	<!-- Contact end -->
+	<!-- Footer start -->
+	<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="copyright">
+                                            Copyright ©2017 All Rights yxvpn.net™ 版权所有
+				</p>
+				<p class="heart">
+                                             免责声明：本团队所有产品/脚本只用于交流研究 严禁用于一切非法业务请自觉遵守中华人民共和国法律 一切法律责任与小哥哥本人以及团队无关
+				</p><p></p>
+				<a  target="_blank" class="copyright" href="./ba.html"><font color="#FFFFFF">晋ICP备13004007号
+</font></a></div><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261567672'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261567672%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+		</div>
+		<!-- .row -->
+	</div>
+	<!-- .container -->
+	</footer>
+	<!-- Footer end -->
+	<!-- Scroll to top -->
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+	<!-- Scroll to top end-->
+	<!-- Javascript files -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.cbpqtrotator.js"></script>
+	<script src="js/zeroclipboard.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script src="js/jquery.fancybox.js" type="text/javascript"></script>
+	<link href="css/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css"/>
+	<!-- fancybox_app -->
+	<script src="js/fancybox_app.js" type="text/javascript"></script>
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script src="js/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+	<script>
+var clipboard = new Clipboard('.btn');
+clipboard.on('success', function(e) {
+	var msg = e.trigger.getAttribute('aria-label');
+	alert(msg);
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+    e.clearSelection();
+});
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "/hm.baidu.com/hm.js?53fdb9329ca66a8d686c1c1b3ae8a3af";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+document.onkeydown = ctrl_key; //绑定禁用键盘事件
+function click() {
+if (event.button == 2)      //单击的鼠标键为右键
+{
+alert('请尊重本人版权!!!');
+return false;
+}
+}
+function ctrl_key() {
+if (event.keyCode == 17) {                          //禁用CTRL+S 保存网页代码
+window.alert("请尊重本人版权!!!");
+return false;
+}
+if (event.keyCode == 123) {                         //禁用F12查看源代码
+alert('请尊重本人版权!!!');
+return false;
+}
+}
+	</script>
+	</body>
+	</html>
